@@ -56,7 +56,7 @@
 
 " General {
 
-    set background=dark         " Assume a dark background
+    set background=light         " Assume a dark background
     if !has('gui')
         "set term=$TERM          " Make arrow and other keys work
     endif
