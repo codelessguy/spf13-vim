@@ -1,6 +1,13 @@
 " Modeline and Notes {
 " vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker spell:
-"
+set foldmethod=syntax
+set cindent
+set smartindent
+set autoindent
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set cinkeys=0{,0},:,0#,!,!^F
 "                    __ _ _____              _
 "         ___ _ __  / _/ |___ /      __   __(_)_ __ ___
 "        / __| '_ \| |_| | |_ \ _____\ \ / /| | '_ ` _ \
@@ -928,3 +935,10 @@
         endif
     endif
 " }
+
+" Custom shorcuts
+
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
