@@ -41,6 +41,8 @@ Delete
 d$ - remove the rest of the line
 d0 - remove from the pointer to the beginning of the line
 dw - delete a word
+u  - Undo
+Ctrl-r - Redo
 
 Tags
 ====

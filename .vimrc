@@ -1,12 +1,15 @@
 " Modeline and Notes {
 " vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker spell:
-set foldmethod=syntax
+
+" Remove scrollbar in gvim
+set guioptions+=LlRrb
+set guioptions-=LlRrb
+
+" When a file is open, everything is fold
+" set foldmethod=syntax
+
 set cindent
 set smartindent
-set autoindent
-set expandtab
-set tabstop=4
-set shiftwidth=4
 set cinkeys=0{,0},:,0#,!,!^F
 "                    __ _ _____              _
 "         ___ _ __  / _/ |___ /      __   __(_)_ __ ___
@@ -228,6 +231,9 @@ set cinkeys=0{,0},:,0#,!,!^F
     " Workaround broken colour highlighting in Haskell
     autocmd FileType haskell setlocal nospell
 
+    " Workaround broken highlighting in ResT files
+    au BufNewFile,BufRead,BufEnter *.rst  set nospell
+
 " }
 
 " Key (re)Mappings {
@@ -433,7 +439,7 @@ set cinkeys=0{,0},:,0#,!,!^F
         nmap <leader>nt :NERDTreeFind<CR>
 
         let NERDTreeShowBookmarks=1
-        let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr']
+        let NERDTreeIgnore=['\.o$','\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr']
         let NERDTreeChDirMode=0
         let NERDTreeQuitOnOpen=1
         let NERDTreeMouseMode=2
