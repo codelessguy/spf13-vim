@@ -234,6 +234,8 @@ set cinkeys=0{,0},:,0#,!,!^F
     " Workaround broken highlighting in ResT files
     au BufNewFile,BufRead,BufEnter *.rst  set nospell
 
+    " Do no expendtab for C files
+    au BufNewFile,BufRead,BufEnter *.c  set noexpandtab
 " }
 
 " Key (re)Mappings {
