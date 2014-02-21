@@ -4,13 +4,8 @@
 " Remove scrollbar in gvim
 set guioptions+=LlRrb
 set guioptions-=LlRrb
-
 " When a file is open, everything is fold
 " set foldmethod=syntax
-
-set cindent
-set smartindent
-set cinkeys=0{,0},:,0#,!,!^F
 "                    __ _ _____              _
 "         ___ _ __  / _/ |___ /      __   __(_)_ __ ___
 "        / __| '_ \| |_| | |_ \ _____\ \ / /| | '_ ` _ \
@@ -950,3 +945,8 @@ nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
+
+set autoindent
+set smartindent
+set cindent
+set cinkeys=0{,0},:,0#,!<Tab>,!^F

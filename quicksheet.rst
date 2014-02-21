@@ -21,6 +21,13 @@ zc - close fold under cursor
 zR - open all folds
 zM - close all folds
 
+Indent
+======
+
+=  - auto indent
+>> - indent right
+<< - indent left
+
 split
 =====
 
