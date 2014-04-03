@@ -231,6 +231,7 @@ set guioptions-=LlRrb
 
     " Do no expendtab for C files
     au BufNewFile,BufRead,BufEnter *.c  set noexpandtab
+    au BufNewFile,BufRead,BufEnter *.h  set noexpandtab
     au BufNewFile,BufRead,BufEnter *.cpp  set noexpandtab
 " }
 
